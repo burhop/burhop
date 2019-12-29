@@ -6,8 +6,26 @@
                 background-repeat:no-repeat;
             color:greenyellow;
             font-family:"fantasy";
-            font-weight:"bold"
-        } 
+            font-weight:"bold";
+            font-size:"30px"
+        }
+        p {
+          font-size:"30px"
+        }
+        a:link {
+          color: pink;
+          size:"30px"
+        }
+        /* visited link */
+          a:visited {
+            color: green;
+          }
+
+          /* mouse over link */
+          a:hover {
+            color: hotpink;
+          }
+        
         
         </style>
     <script type="text/javascript">
@@ -17,33 +35,66 @@
       ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
   }, blink_speed);
       </script>
+	<script language="javascript">
+    var a=new Array(),n=""
+    a[1]='W';a[2]='h';a[3]='a';a[4]='t';a[5]=' ';a[6]='a';a[7]=' ';a[8]='g';a[9]='r';a[10]='e';a[11]='a';a[12]='t';a[13]=' ';a[14]='w';
+    a[15]='e';a[16]='b';a[17]='p';a[18]='a';a[19]=' g';a[20]='e';a[21]='!'
+    function one()
+    {
+    t=document.f.txt.value
+    j=t.length
+    if(j>0)
+    {
+    for(var i=1;i<=j;i++)
+    {
+    n=n+a[i]
+    if(i==21)
+    {
+    document.f.txt.value="What a great web page. No one does them in this traditional fashion anymore. Props!!!"
+    n=""
+    }
+    }
+    }
+    document.f.txt.value=n
+    n=""
+    setTimeout("one()",1)
+    }
+    function on()
+    {
+    one()
+    }
+    </script>
+
+
   </head>
   <body>
  
- <center>
+ <center><img src="img/underconstruction.gif">
     <marquee direction="down" width="500" height="100" behavior="alternate" 
              style="border:solid;background-color:black;font-size:60px;color:orange">
         <marquee behavior="alternate">
           <img alt="" src="img/welcome.gif"/>
         </marquee>
       </marquee>
-    </center> 
+     
+    </center>  
     <table>
         <tr>
-          <th>
+          <th align="left">
     <h1><div id="myBlinkingDiv">This is Mark Burhop's WWW Page</div></h1>
    <!-- ######## This is a comment, visible only in the source editor  ######## -->
-
-  <p><font face="comicsans" size="30px" color="yellow">Important Links:</font></p>
+<hr>
+  <p><h1>Important <img src="img/links.gif"></p></h2>
+    
   <ol>
-  <li><a href="https://github.com/burhop" target="_blank">
-    <img src="img/linkedin.gif">
-    </a>       </li>
   <li><a href="https://github.com/burhop" target="_blank">
     <img src="img/github.gif">
     </a> </li>
-  <li><a href="https://github.com/burhop" target="_blank">
-    <img src="img/github.gif">
+      <li><a href="https://linkedin.com/burhop" target="_blank">
+    <img src="img/linkedin.gif">
+    </a>       </li>
+  <li><a href="https://twitter.com/burhop" target="_blank">
+    <img src="img/twitter.gif">
     </a></li>
   </ol>
   <p></p>
@@ -51,18 +102,38 @@
 <th width=1000>
    <center><marquee behavior="scroll""alternate" direction="left">
     <img alt="" src="img/earth.gif"/></center>
-   <p>Mark Burhop's home on the WWW</p>
+   <p>Mark Burhop's home on the World Wide InterWebs</p>
 </marquee> 
 </th>
 </tr>
       </table>
-      <h1 style="color: #4485b8;"><span style="background-color: #33cccc;">My Web Page</span></h1>
-      <p><img src="https://burhop.github.io/prime/html/logo2.png" alt="" width="200" height="55" /></p>
+<hr>
+<p><h1>Other 
+ <img src="img/links.gif"></h1>
+      <p></p>
+      <a href= "https://www.jotform.com/blog/how-to-make-a-web-design-look-good/" >
+      <img height="80" width="100"src="img/ryan.gif"> How to make a web design look good.  </a>
+      <p></p>
+      <a href= "img/primes.png" >
+        <img height="80" width="100"src="img/primeicon.png"> A big Ulam Spiral created from my prime number code. 
+        You are welcome to frame it or put it on a shirt.  The code was written in C++ and a little python.  
+        <img height="40" width="20"src="img/snake.gif"> </a> BTW, did you notice the background of this page is part of an Ulam Spiral?
 
+
+      <hr>
+      <body onload="on()">
+        <center>
+      <h2>Guest Book.  Let me know your feedback!</h2>
+      <form name="f">
+      <textarea name="txt" cols="80" rows="5">
+      </textarea>
+      </center>
+      </form>     
 <!-- hitwebcounter Code START -->
 
 You are vistor <a href="https://www.hitwebcounter.com" target="_blank">
     <img src="https://hitwebcounter.com/counter/counter.php?page=7175632&style=0014&nbdigits=9&type=page&initCount=314159" title="Counter" Alt="hit web counter.com"   border="0" >
     </a>                                    
-    <p> <img src="img/codeguild1.gif" alt="" />    </p>                  
+    <p> <img src="img/codeguild1.gif" alt="" />    </p> 
+    <img src = "img/geocities.jpg" width="100" height="100">                 
 </body>
